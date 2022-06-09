@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>Stand With Camden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+    margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(133, 165, 118);
+}
+
+.topnav a {
+  float: left;
+  color: #020101;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/*highlighting*/
+.topnav a:hover {
+  background-color: rgb(161, 204, 141);
+  color: black;
+}
+
+/*when selected*/
+.topnav a.active {
+  background-color: rgb(173, 233, 145);
+  color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header{
+  background-color: rgb(155, 192, 138);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(22, 19, 19);
+}
+footer{
+  background-color: rgba(155, 192, 138);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(22,19,19);
+}
+body{
+  font-family: 'Courier New', monospace;
+}
+
+
+/*image with text next to it*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  width: 560px;
+}
+
+
+.image {
+  flex-basis: none;
+}
+
+
+.text {
+  font-size: 11px;
+  padding-left: 20px;
+  padding-right:20px;
+  text-align: center;
+}
+.btn {
+  float: left;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  /*padding: 20px 30px;*/
+  background-color: rgb(114, 151, 96);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(178, 226, 156);
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.img{
+  float:right;
+  padding-right: 50px;
+}
+</style>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+        <a class="active" href="/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html">Home</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/about.html">About</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">Partners</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact</a>
+      </div>
+        
+      <div style="padding-left:16px">
+    </div>
+
+    <img class="img" src="SWClogo.png" alt="logo" style="width:15%; height:165px">
+      <header>
+        <h2 style="text-align:center; margin-left: 200px;"> Sandwich Making Nights </h2>
+      </header>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="sandwhich1.png">
+        </div>
+        <div class="text">
+            <h1>At Sandwich Making Nights, we make sandwiches for 1-2 hours for Cathedral Kitchen in Camden. This started with SWC and they are 
+              usually our largest events. We aim to get as many people in the SWC (and LEO) club to attend as possible!<br> <br>This is a very fun and impactful 
+              event that is so easy to participate in. Reach out to one of the officers if you would like more details and/or the date of the next sandwich 
+              making night. <br> <br>We strongly encourage those who attend to bring 1+ loafs of bread as that is usually what we run out of first!
+              <br> <br>For more information about Cathedral Kitchen, visit the <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">partners page!</a> 
+            </h1>
+
+        </div>
+      </div>
+
+      <div class="row"> 
+        <div class="column">
+          <img id = "sandwich2" src="sandwhich2.png" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id = "sandwich3" src="sandwhich3.png" style="width:100%; height:400px">
+        </div>  
+        <div class="column">
+          <img id = "sandwich4" src="sandwhich4.png" style="width:100%; height:500px">
+        </div>  
+        <div class="column">
+          <img id = "sandwich6" src="sandwhich6.png" style="width:100%; height:500px">
+        </div>  
+        <div class="column">
+          <img id = "sandwich8" src="sandwhich8.png" style="width:100%; height:500px">
+        </div>  
+        <div class="column">
+          <img id = "sandwich10" src="sandwhich10.png" style="width:100%; height:500px">
+        </div>  
+    </div>
+      <footer>
+        <p>To Contact Us, Go To Our <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact Page</a> 
+          <button class="btn" onclick="window.location.href= '/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html'">BACK</button></p> 
+      </footer>
+</body>

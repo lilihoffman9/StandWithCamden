@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>Stand With Camden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body{
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(133, 165, 118);
+}
+
+.topnav a {
+  float: left;
+  color: #020101;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/*highlighting*/
+.topnav a:hover {
+  background-color: rgb(161, 204, 141);
+  color: black;
+}
+
+/*when selected*/
+.topnav a.active {
+  background-color: rgb(173, 233, 145);
+  color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background-color: rgb(155, 192, 138);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(22, 19, 19);
+}
+
+footer{
+  background-color: rgba(155, 192, 138);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(22,19,19);
+}
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+body{
+  font-family: 'Courier New', monospace;
+}
+.accordion {
+  background-color: rgb(155, 192, 138);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(161, 204, 141); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+  margin-top: 50px;
+}
+
+.hvrbox img {
+	max-width: 80%;
+  background-color: rgb(155, 192, 138);
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_right {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	height: 100%;
+	background: rgb(91, 112, 81);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox .hvrbox-layer_left {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	height: 100%;
+	background: rgb(91, 112, 81);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox:hover .hvrbox-layer_left,
+.hvrbox.active .hvrbox-layer_left {
+  margin-left: 50px;
+  width: 600px;
+	opacity: 1;
+}
+
+.hvrbox:hover .hvrbox-layer_right,
+.hvrbox.active .hvrbox-layer_right {
+  margin-left: 50px;
+  width: 600px;
+	opacity: 1;
+}
+
+.hvrbox:hover .hvrbox-layer_slideleft,
+.hvrbox.active .hvrbox-layer_slideleft {
+	-moz-transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(0, 0, 0); 
+	border-top: 1px solid rgba(2, 2, 2, 0.7);
+	margin-top: 5px;
+  margin-left: 20px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+.logo{
+  float:right;
+  padding-right: 50px;
+}
+.img{
+  float:right;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+.img2{
+  float:left;
+  margin-left: 30px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+</style>
+
+<body>
+  <div class="topnav">
+    <a href="/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html">Home</a>
+    <a class="active" href="/Users/lilihoffman/Desktop/Standwithcamden/about.html">About</a>
+    <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">Partners</a>
+    <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact</a>
+  </div>
+
+  <img class="logo" src="SWClogo.png" alt="logo" style="width:15%; height:165px">
+  <header>
+    <h2 style="text-align:center; margin-left: 205px;"> About the Club </h2>
+  </header>
+<body onload="myFunctionTwo()" style="background-color:rgb(248, 246, 246);">
+
+
+<br>
+<img style="width:50%; height:660px" class="img" src="kidsalley4.png" >
+  
+<div class="hvrbox">
+  <header style="width: 600px; height: 300px; margin-left: 50px;"> 
+    <p style="text-align: center; margin-top: 110px; font-size: 50px;"> Mission Statement</p>
+  </header>
+  <div class="hvrbox-layer_left">
+    <div class="hvrbox-text">Stand With Camden works toward improving education and life for citizens throughout Camden County by raising 
+      awareness for and volunteering with various revitalization projects and learning opportunities with students 
+      within Camden County. </div>
+  </div>
+</div>
+
+
+<div class="hvrbox">
+  <header style="width: 600px; height: 300px; margin-left: 50px;"> 
+    <p style="text-align: center; margin-top: 110px; font-size: 50px;"> Our Start</p>
+  </header>
+  <div class="hvrbox-layer_right">
+    <div class="hvrbox-text">Stand With Camden's first project was sponsoring Noah, a student in Camden County, through high school through the 
+      organization Urban Promise. While SWC does still work with Urban Promise, the partner organizations, members, and volunteering opportunities have grown
+      more than ever was thought possible.
+    </div>
+  </div>
+</div>
+
+<img style="width:50%; height:455px" class="img2" src="Officers2021-22.jpeg">
+
+
+<div class="hvrbox">
+  <header style="width: 600px; height: 200px; margin-left: 50px;"> 
+    <p style="text-align: center; margin-top: 65px; font-size: 50px;"> Future Meetings</p>
+  </header>
+  <div class="hvrbox-layer_right">
+    <div class="hvrbox-text">Meetings take place on the second Tuesday of every month in C8 <br><br>Dates: 1/11, 2/8, 3/8, 4/12, 
+      5/10
+    </div>
+  </div>
+</div>
+
+<div class="hvrbox">
+  <header style="width: 600px; height: 200px; margin-left: 50px;"> 
+    <p style="text-align: center; margin-top: 65px; font-size: 50px;"> SWC Social Media</p>
+  </header>
+  <div class="hvrbox-layer_right">
+    <div class="hvrbox-text">Follow our Instagram and Twitter accounts! 
+      <h4 class="fa fa-instagram" > @hmhs.standwithcamden</h4>
+      <h4 class="fa fa-twitter" > @StandWithCamden</h4>
+    </div>
+
+  </div>
+</div>
+
+<!---
+  <button class="accordion">Upcoming Meetings</button>
+  <div class="panel">
+    <p>hey</p>
+  </div>
+  
+  <button class="accordion">Upcoming Meetings</button>
+  <div class="panel">
+    <p>hey</p>
+  </div>
+
+  
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+  -->
+<br>
+<br>
+
+  <footer>
+    <p>To Contact Us, Go To Our <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact Page</a> </p> 
+  </footer>
+
+</body>

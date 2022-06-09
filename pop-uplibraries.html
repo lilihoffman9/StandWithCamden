@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>Stand With Camden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+    margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(133, 165, 118);
+}
+
+.topnav a {
+  float: left;
+  color: #020101;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/*highlighting*/
+.topnav a:hover {
+  background-color: rgb(161, 204, 141);
+  color: black;
+}
+
+/*when selected*/
+.topnav a.active {
+  background-color: rgb(173, 233, 145);
+  color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header{
+  background-color: rgb(155, 192, 138);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(22, 19, 19);
+}
+footer{
+  background-color: rgba(155, 192, 138);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(22,19,19);
+}
+body{
+  font-family: 'Courier New', monospace;
+}
+
+/*image with text next to it*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  width: 560px;
+}
+
+
+.image {
+  flex-basis: none;
+}
+
+
+.text {
+  font-size: 11px;
+  padding-left: 20px;
+  padding-right:20px;
+  text-align: center;
+}
+.btn {
+  float: left;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  /*padding: 20px 30px;*/
+  background-color: rgb(114, 151, 96);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(178, 226, 156);
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.img{
+  float:right;
+  padding-right: 50px;
+}
+</style>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+        <a class="active" href="/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html">Home</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/about.html">About</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">Partners</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact</a>
+      </div>
+
+
+    <img class="img" src="SWClogo.png" alt="logo" style="width:15%; height:165px">
+      <header>
+        <h2 style="text-align:center; margin-left: 210px;"> Pop-Up Libraries </h2>
+    </header>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="CCPUL2.jpg.jpg">
+        </div>
+        <div class="text">
+            <h1>The Pop-Up Library is a free library that is set up outside of Cathedral Kitchen with Tom Martin from Camden County Pop-Up
+              Libraries. 
+              <br> <br>Stand With Camden volunteers work at the Pop-Up Libraries with Tom and give out books to those visiting Cathedral
+              Kitchen. This is another amazing community service experinece and is touching for both the volunteer and those who visit the 
+              library. <br> <br>Dates for these events are shared via remind, but feel free to reach out to a volunteer with any questions and/or future 
+              Pop-Up Library dates. 
+              <br> <br>For more information about CCPUL, visit the <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">partners page!</a> 
+            </h1>
+
+        </div>
+      </div>
+
+
+    <div class="row"> 
+        <div class="column">
+          <img id = "CCPUL1" src="CCPUL1.png" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id = "CCPUL4" src="CCPUL4.jpeg" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id = "CCPUL8" src="CCPUL8.png" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id = "CCPUL9" src="CCPUL9.png" style="width:100%; height:400px">
+        </div>
+    </div>
+
+
+      <footer>
+        <p>To Contact Us, Go To Our <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact Page</a> 
+          <button class="btn" onclick="window.location.href= '/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html'">BACK</button></p> 
+      </footer>
+</body>

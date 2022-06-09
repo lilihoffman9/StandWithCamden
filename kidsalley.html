@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>Stand With Camden</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(133, 165, 118);
+}
+
+.topnav a {
+  float: left;
+  color: #020101;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/*highlighting*/
+.topnav a:hover {
+  background-color: rgb(161, 204, 141);
+  color: black;
+}
+
+/*when selected*/
+.topnav a.active {
+  background-color: rgb(173, 233, 145);
+  color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header{
+  background-color: rgb(155, 192, 138);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(22, 19, 19);
+}
+footer{
+  background-color: rgba(155, 192, 138);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(22,19,19);
+}
+body{
+  font-family: 'Courier New', monospace;
+}
+
+
+/*image with text next to it*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  width: 560px;
+}
+
+
+.image {
+  flex-basis: none;
+}
+
+
+.text {
+  font-size: 11px;
+  padding-left: 20px;
+  padding-right:20px;
+  text-align: center;
+}
+.btn {
+  float: left;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  /*padding: 20px 30px;*/
+  background-color: rgb(114, 151, 96);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(178, 226, 156);
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.img{
+  float:right;
+  padding-right: 50px;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html">Home</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/about.html">About</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">Partners</a>
+        <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact</a>
+      </div>
+        
+      <div style="padding-left:16px">
+      </div>
+
+      <img class="img" src="SWClogo.png" alt="logo" style="width:15%; height:165px">
+      <header>
+        <h2 style="text-align:center; margin-left: 200px;"> Kids Alley </h2>
+      </header>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="kidsalley8.png">
+        </div>
+        <div class="text">
+            <h1>Kids Alley is an organization based in Pennsauken where 
+                volunteers can spend their time tutoring kids from all over Camden County.<br><br>After school, volunteers can help the kids 
+                with their homework, talk and play with them. This is an amazing way to get envolved in your community and 
+                some really special bonds are formed with kids! <br><br>You can volunteer any day Monday-Thursday from 3-5 in their building at 4106 
+                Terrace Avenue, Pennsauken, NJ.
+                <br><br>Make sure to fill out the volunteer application of their website and 
+                have an image of your vaccination card!
+              <br> <br>For more information and the application form, visit the <a href="/Users/lilihoffman/Desktop/Standwithcamden/groups.html">partners page!</a> 
+            </h1>
+                
+
+        </div>
+      </div>
+    <!---
+    <div class="img">
+        <img src="kidsalley8.png" alt="Kids Alley" style="width:100%; height:400px">
+    </div>
+
+
+    <p>Kids Alley is an organization based in Pennsauken where 
+        volunteers can spend their time volunteering with kids from all over Camden County. After school, volunteers can go and help the kids 
+        with their homework and then play games and talk with them. This is an amazing way to get envolved in your community and some really 
+        special bonds are formed with kids (make sure to fill out the volunteer application of their website!); they work out of 4106 Terrace 
+        Avenue, Pennsauken, NJ.</p>
+
+    -->
+    <div class="row"> 
+        <div class="column">
+          <img id = "kidsalley1" src="kidsalley1.jpg" style="width:100%; height:400px">
+          <img id = "kidsalley2" src="kidsalley2.png" style="width:100%; height:400px">
+          <img id = "kidsalley8" src="kidsalley8.png" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id = "kidsalley3" src="kidsalley3.png" style="width:100%; height:400px">
+          <img id="kidsalley4" src="kidsalley4.png" style="width:100%; height:400px">
+          <img id="kidsalley9" src="kidsalley9.png" style="width:100%; height:400px">
+        </div>  
+        <div class="column">
+          <img id = "kidsalley5" src="kidsalley5.png" style="width:100%; height:400px">
+          <img id = "kidsalley6" src="kidsalley6.png" style="width:100%; height:400px">
+        </div>
+        <div class="column">
+          <img id="kidsalley7" src="kidsalley7.png" style="width:100%; height:400px">
+        </div>
+      </div>
+
+      <footer>
+        <p>To Contact Us, Go To Our <a href="/Users/lilihoffman/Desktop/Standwithcamden/contact.html">Contact Page</a> 
+          <button class="btn" onclick="window.location.href= '/Users/lilihoffman/Desktop/Standwithcamden/<!DOCTYPE html>.html'">BACK</button></p>
+      </footer>
+
+</body>
